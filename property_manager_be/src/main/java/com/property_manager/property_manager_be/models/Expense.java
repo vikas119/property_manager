@@ -17,4 +17,12 @@ public class Expense {
 
     String description;
     int proposedPrice;
+    long time;
+    int actualPrice;
+
+    public Expense(String description, int proposedPrice, long time) {
+        this.description = description;
+        this.proposedPrice = proposedPrice;
+        this.time = time;
+    }
 }
