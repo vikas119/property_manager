@@ -29,4 +29,9 @@ CREATE TABLE IF NOT EXISTS lease (
     rent INTEGER,
     security_deposit INTEGER,
     FOREIGN KEY (property_id) REFERENCES property(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS tenant (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
 )

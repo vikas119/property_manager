@@ -14,6 +14,7 @@ public class Expense {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
+
     String description;
     int proposedPrice;
 }
